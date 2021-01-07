@@ -107,8 +107,8 @@ if __name__ == '__main__':
     X_test = []
     convert_train()  # 读取训练集到X_train,Y_train
     convert_test()     # 读取测试集到X_test
-    regression = build_rf(100, 0, 2, 1)    # 参数分别为n_estimators, max_depth, min_samples_split,
-    # min_samples_leaf,(100,0,2,1)为默认值，max_depth=0即为默认值：无
+    regression = build_rf(160, 4, 2, 5)    # 参数分别为n_estimators, max_depth, min_samples_split,
+    # min_samples_leaf,(160, 4, 2, 5)为最佳值，(100,0,2,1)为默认值，max_depth=0即为默认值：无
     Y_test = regression.predict(X_test)  # 预测测试集数据,结果存至Y_test
     print_result()      # 打印结果到submission.csv
     train_R2 = regression.score(X_train, Y_train)  # 训练集R2
