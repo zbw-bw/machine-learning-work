@@ -37,7 +37,7 @@ py文件名为'GD.py'，将其与'train1.csv'、'test_sample.csv'放到同一文
 
 ### 二、IMDB情感判断
 
-py文件名为'LSTM.py'，将其与'train2.csv'、'test_data.csv'、'submission.csv'放到同一文件运行，结果输出至'submission2.csv'。用python实现，需要用到的包：
+py文件名为'LSTM.py'，将其与'train2.csv'、'test_data.csv'、'submission.csv'放到同一文件运行，结果输出至'submission2.csv'。其中'train2.csv'太大，所以压缩在'train2.zip'中。用python实现，需要用到的包：
 
 | 名字                | 版本   |
 | ------------------- | ------ |
