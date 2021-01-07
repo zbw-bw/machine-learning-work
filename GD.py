@@ -101,8 +101,8 @@ if __name__ == '__main__':
     X_test = []
     convert_train()  # 读取训练集到X_train,Y_train
     convert_test()     # 读取测试集到X_test
-    regression = build_gd(100, 0.1, 2, 1, 3)    # 参数分别为n_estimators, learning_rate,
-    # min_samples_split, min_samples_leaf, max_depth，（100，0.1，2，1，3）为默认值
+    regression = build_gd(70, 0.1, 4, 1, 3)    # 参数分别为n_estimators, learning_rate,
+    # min_samples_split, min_samples_leaf, max_depth，(70, 0.1, 4, 1, 3)为最佳值，（100，0.1，2，1，3）为默认值
     Y_test = regression.predict(X_test)  # 预测测试集数据,结果存至Y_test
     print_result()      # 打印结果到submission.csv
     train_R2 = regression.score(X_train, Y_train)  # 训练集R2
